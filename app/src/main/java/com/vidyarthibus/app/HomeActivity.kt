@@ -60,7 +60,7 @@ class HomeActivity : AppCompatActivity() {
         }
 
         binding.tvSettings.setOnClickListener {
-            Toast.makeText(this, "Settings feature coming soon", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, SettingsActivity::class.java))
         }
     }
 }
