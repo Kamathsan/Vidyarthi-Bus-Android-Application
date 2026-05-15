@@ -147,7 +147,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
-                android:text="Vidyarthi-Bus: Transit Intelligence\nVersion 1.0.0 (Release Candidate)\nDeveloped for academic submission :) ."
+                android:text="Vidyarthi-Bus: Transit Intelligence\nVersion 1.0.0.\n:) "
                 android:textColor="#757575"
                 android:textSize="14sp"
                 android:lineSpacingExtra="4dp"
