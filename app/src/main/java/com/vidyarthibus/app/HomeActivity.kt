@@ -28,7 +28,8 @@ class HomeActivity : AppCompatActivity() {
             "Yenepoya (Deralakatte / Kotekar Beeri)",
             "Sahyadri (Adyar)",
             "SJEC (Vamanjoor)",
-            "Nitte (Karkala)"
+            "Nitte (Karkala)",
+            "Canara Engineering College (Benjanapadavu)"
         )
 
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, campuses)

@@ -38,11 +38,13 @@ class MainActivity : AppCompatActivity() {
     private lateinit var fusedLocationClient: FusedLocationProviderClient
 
     // MANGALURU CAMPUS LOCATIONS
+    // MANGALURU CAMPUS LOCATIONS
     private val campusCoordinates = mapOf(
         0 to GeoPoint(12.8735, 74.8465), 1 to GeoPoint(13.0108, 74.7943),
         2 to GeoPoint(13.3525, 74.7928), 3 to GeoPoint(12.8158, 74.9341),
         4 to GeoPoint(12.8020, 74.8770), 5 to GeoPoint(12.8660, 74.9250),
-        6 to GeoPoint(12.9050, 74.8980), 7 to GeoPoint(13.1800, 74.9350)
+        6 to GeoPoint(12.9050, 74.8980), 7 to GeoPoint(13.1800, 74.9350),
+        8 to GeoPoint(12.9016, 74.9995) // <-- ADDED CANARA
     )
 
     // CAMPUS -> VALID BUS NUMBERS
@@ -50,10 +52,10 @@ class MainActivity : AppCompatActivity() {
         0 to listOf("13", "14A", "15", "17", "31"), 1 to listOf("2", "2A", "15", "15A", "41A", "45"),
         2 to listOf("Express", "Service"), 3 to listOf("51", "55", "Express"),
         4 to listOf("42", "43", "44A"), 5 to listOf("10A", "10B", "30A", "30B"),
-        6 to listOf("3", "3A", "3B", "3D", "12A", "22"), 7 to listOf("Karkala Express", "Nitte Direct")
+        6 to listOf("3", "3A", "3B", "3D", "12A", "22"), 7 to listOf("Karkala Express", "Nitte Direct"),
+        8 to listOf("City to Benjanapadavu", "Neermarga Route", "Bantwal via Benjanapadavu") // <-- ADDED CANARA ROUTES
     )
 
-    // DEMO MODE: MANUAL STOP SELECTIONS BASED ON SELECTED CAMPUS
     // EXPANDED DEMO MODE: MANUAL STOP SELECTIONS BASED ON SELECTED CAMPUS
     private val demoStops = mapOf(
         0 to mapOf("State Bank" to GeoPoint(12.8647, 74.8360), "Ladyhill" to GeoPoint(12.8850, 74.8350), "KSRTC" to GeoPoint(12.8875, 74.8373), "Lalbagh" to GeoPoint(12.8810, 74.8380), "Jyothi" to GeoPoint(12.8700, 74.8480)),
@@ -63,8 +65,10 @@ class MainActivity : AppCompatActivity() {
         4 to mapOf("State Bank" to GeoPoint(12.8647, 74.8360), "Pumpwell" to GeoPoint(12.8631, 74.8569), "Thokkottu" to GeoPoint(12.8100, 74.8550), "Kankanady" to GeoPoint(12.8660, 74.8550)),
         5 to mapOf("State Bank" to GeoPoint(12.8647, 74.8360), "Pumpwell" to GeoPoint(12.8631, 74.8569), "Mangalore Junction" to GeoPoint(12.8636, 74.8785), "Jyothi" to GeoPoint(12.8700, 74.8480), "Padil" to GeoPoint(12.8730, 74.8820)),
         6 to mapOf("State Bank" to GeoPoint(12.8647, 74.8360), "KSRTC" to GeoPoint(12.8875, 74.8373), "Mallikatte" to GeoPoint(12.8750, 74.8600), "Bikkarnakatta" to GeoPoint(12.8800, 74.8650), "Kulshekar" to GeoPoint(12.8880, 74.8760)),
-        7 to mapOf("State Bank" to GeoPoint(12.8647, 74.8360), "Moodabidri" to GeoPoint(13.0650, 74.9900), "Karkala" to GeoPoint(13.2000, 74.9950), "Gurupura" to GeoPoint(12.9250, 74.9450))
+        7 to mapOf("State Bank" to GeoPoint(12.8647, 74.8360), "Moodabidri" to GeoPoint(13.0650, 74.9900), "Karkala" to GeoPoint(13.2000, 74.9950), "Gurupura" to GeoPoint(12.9250, 74.9450)),
+        8 to mapOf("State Bank" to GeoPoint(12.8647, 74.8360), "Jyothi" to GeoPoint(12.8700, 74.8480), "Neermarga" to GeoPoint(12.9000, 74.9100), "Bantwal (B.C Road)" to GeoPoint(12.8800, 75.0350)) // <-- ADDED CANARA STOPS
     )
+
 
 
     private var selectedCampusIndex = 0
