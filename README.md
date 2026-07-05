@@ -24,17 +24,19 @@ Vidyarthi-Bus introduces a peer-to-peer data-sharing model to estimate bus capac
 - **Networking:** Kotlin Coroutines (`Dispatchers.IO`), `HttpURLConnection`, Native JSON Parsing.
 
 ## 📸 Screenshots & Demo
-*(Add your screenshots here!)*
-* `<img src="link_to_screenshot_1" width="250">` - Dashboard
-* `<img src="link_to_screenshot_2" width="250">` - Live Map & Routing
-* `<img src="link_to_screenshot_3" width="250">` - Multi-Bus Crowd Meter
+<img width="1920" height="1080" alt="Untitled design(1)" src="https://github.com/user-attachments/assets/5a621822-8b7e-4b17-bac3-aa7fb4804f05" />
+ Dashboard
+<img width="1080" height="2400" alt="app3" src="https://github.com/user-attachments/assets/ee8c672e-4bec-4b0b-ac36-eee96aa3c657" />
+Live Map & Routing
+<img width="1034" height="1080" alt="Untitled design" src="https://github.com/user-attachments/assets/c3bda266-6e42-4d37-8dd0-104caaff4c81" />
+Multi-Bus Crowd Meter
 
 ## 🚀 Setup & Installation Instructions
 To run this project locally on your machine, follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/Vidyarthi-Bus-Android-Application.git
+   git clone https://github.com/Kamathsan/Vidyarthi-Bus-Android-Application.git
    ```
 2. **Open in Android Studio:**
    - Launch Android Studio.
